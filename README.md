@@ -1,0 +1,1 @@
+## [thankunext do @c3l3si4n](https://github.com/c3l3si4n/thankunext) feito em Python
