@@ -27,7 +27,7 @@ build_manifest_response = requests.get(url + build_manifest_path, headers={
 })
 
 paths = re.findall(
-    r'(?<=\")[a-zA-Z0-9_/\[\]\.]+(?=\")', build_manifest_response.text)
+    r'(?<=\")/[a-zA-Z0-9_/\[\]\.-]+(?=\")', build_manifest_response.text)
 
 paths = sorted(set(paths))
 
