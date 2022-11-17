@@ -14,6 +14,9 @@ url = sys.argv[1]
 if not re.search(r'^(http|https)://', url):
     exit(f'error: invalid url.')
 
+if re.search(r'/$', url):
+    url = url[:-1]
+
 response = requests.get(url, headers={
     'user-agent': 'thankunext/1.0'
 })
